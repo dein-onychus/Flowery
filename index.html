@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowery soundboard</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    input {
+      margin: 1rem;
+      padding: 0.3rem;
+    }
+    .sound-group {
+      display: inline-block;
+      margin: 1rem;
+    }
+    button {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: yellow;
+      border: 1px solid #000;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto 0.5rem;
+      padding: 0;
+    }
+    button:active {
+      background: orange;
+    }
+    div {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="searchBar" placeholder="search sounds...">
+
+  <div id="soundList">
+    <div class="sound-group" data-name="all according to all according to plant">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_all_according_to_all_according_to_plant.wav"></button>
+      <div>all according to all according to plant</div>
+    </div>
+    <div class="sound-group" data-name="blingo blizzard">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_blingo_blizzard.wav"></button>
+      <div>blingo blizzard</div>
+    </div>
+    <div class="sound-group" data-name="calling for help">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_calling_for_help.wav"></button>
+      <div>calling for help</div>
+    </div>
+    <div class="sound-group" data-name="dont you like serving humans">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_dont_you_like_serving_humans.wav"></button>
+      <div>dont you like serving humans</div>
+    </div>
+    <div class="sound-group" data-name="flowers blooms in your heart">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_flowers_blooms_in_your_heart.wav"></button>
+      <div>flowers blooms in your heart</div>
+    </div>
+    <div class="sound-group" data-name="flowery">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_flowery.wav"></button>
+      <div>flowery</div>
+    </div>
+    <div class="sound-group" data-name="flowery2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_flowery2.wav"></button>
+      <div>flowery2</div>
+    </div>
+    <div class="sound-group" data-name="for the fans">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_forthefans.wav"></button>
+      <div>for the fans</div>
+    </div>
+    <div class="sound-group" data-name="forget it">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_forget_it.wav"></button>
+      <div>forget it</div>
+    </div>
+    <div class="sound-group" data-name="get a chance 1">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_get_a_chance_1.wav"></button>
+      <div>get a chance 1</div>
+    </div>
+    <div class="sound-group" data-name="get a chance 2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_get_a_chance_2.wav"></button>
+      <div>get a chance 2</div>
+    </div>
+    <div class="sound-group" data-name="give to you">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_give_to_you.wav"></button>
+      <div>give to you</div>
+    </div>
+    <div class="sound-group" data-name="glue">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_glue.wav"></button>
+      <div>glue</div>
+    </div>
+    <div class="sound-group" data-name="go home">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_go_home.wav"></button>
+      <div>go home</div>
+    </div>
+    <div class="sound-group" data-name="goodbye">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_goodbye.wav"></button>
+      <div>goodbye</div>
+    </div>
+    <div class="sound-group" data-name="great style">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_great_style.wav"></button>
+      <div>great style</div>
+    </div>
+    <div class="sound-group" data-name="grown like a turnip">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_grown_like_a_turnip.wav"></button>
+      <div>grown like a turnip</div>
+    </div>
+    <div class="sound-group" data-name="hah">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hah.wav"></button>
+      <div>hah</div>
+    </div>
+    <div class="sound-group" data-name="heh it's my jarona">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_heh_it_s_my_jarona.wav"></button>
+      <div>heh it's my jarona</div>
+    </div>
+    <div class="sound-group" data-name="here i come">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hereicome.wav"></button>
+      <div>here i come</div>
+    </div>
+    <div class="sound-group" data-name="here i come san fran disco">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hereicomesanfrandisc.wav"></button>
+      <div>here i come san fran disco</div>
+    </div>
+    <div class="sound-group" data-name="here i come san fran disco strong">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hereicomesanfrandisco_strong.wav"></button>
+      <div>here i come san fran disco strong</div>
+    </div>
+    <div class="sound-group" data-name="here i come san fran disco weak">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hereicomesanfrandisco_weak.wav"></button>
+      <div>here i come san fran disco weak</div>
+    </div>
+    <div class="sound-group" data-name="hey">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hey.wav"></button>
+      <div>hey</div>
+    </div>
+    <div class="sound-group" data-name="hey boys">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hey_boys.wav"></button>
+      <div>hey boys</div>
+    </div>
+    <div class="sound-group" data-name="hey guys">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_heyguys.wav"></button>
+      <div>hey guys</div>
+    </div>
+    <div class="sound-group" data-name="hey guys i think i found a glue">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_heyguysithinkifoundaglue.wav"></button>
+      <div>hey guys i think i found a glue</div>
+    </div>
+    <div class="sound-group" data-name="hey raly">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hey_raly.wav"></button>
+      <div>hey raly</div>
+    </div>
+    <div class="sound-group" data-name="hey there little guy">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_heytherelittleguy.wav"></button>
+      <div>hey there little guy</div>
+    </div>
+    <div class="sound-group" data-name="hoo">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_hoo.wav"></button>
+      <div>hoo</div>
+    </div>
+    <div class="sound-group" data-name="huh">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_huh.wav"></button>
+      <div>huh</div>
+    </div>
+    <div class="sound-group" data-name="huh ill show you">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_huhillshowyou.wav"></button>
+      <div>huh ill show you</div>
+    </div>
+    <div class="sound-group" data-name="i'm falling">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_im_falling.wav"></button>
+      <div>i'm falling</div>
+    </div>
+    <div class="sound-group" data-name="i'm only trying to help you">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_im_only_trying_to_help_you.wav"></button>
+      <div>i'm only trying to help you</div>
+    </div>
+    <div class="sound-group" data-name="i'm sorry once again i kept a lady in waiting">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_imsorryonceagainikeptaladyinwaiting.wav"></button>
+      <div>i'm sorry once again i kept a lady in waiting</div>
+    </div>
+    <div class="sound-group" data-name="it">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_it.wav"></button>
+      <div>it</div>
+    </div>
+    <div class="sound-group" data-name="it's all in a name">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_its_all_in_a_name.wav"></button>
+      <div>it's all in a name</div>
+    </div>
+    <div class="sound-group" data-name="it's all yours">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_its_all_yours.wav"></button>
+      <div>it's all yours</div>
+    </div>
+    <div class="sound-group" data-name="it's me">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_itsme.wav"></button>
+      <div>it's me</div>
+    </div>
+    <div class="sound-group" data-name="it's me flowery">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_itsmeflowery.wav"></button>
+      <div>it's me flowery</div>
+    </div>
+    <div class="sound-group" data-name="it's so human">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_its_so_human.wav"></button>
+      <div>it's so human</div>
+    </div>
+    <div class="sound-group" data-name="ja kidding">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_ja_kidding.wav"></button>
+      <div>ja kidding</div>
+    </div>
+    <div class="sound-group" data-name="jarona 1">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_jarona1.wav"></button>
+      <div>jarona 1</div>
+    </div>
+    <div class="sound-group" data-name="jarona 2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_jarona2.wav"></button>
+      <div>jarona 2</div>
+    </div>
+    <div class="sound-group" data-name="jarona 3">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_jarona3.wav"></button>
+      <div>jarona 3</div>
+    </div>
+    <div class="sound-group" data-name="jarona 4">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_jarona4.wav"></button>
+      <div>jarona 4</div>
+    </div>
+    <div class="sound-group" data-name="jarona orange 1">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_jarona_orange1.wav"></button>
+      <div>jarona orange 1</div>
+    </div>
+    <div class="sound-group" data-name="jarona orange 2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_jarona_orange2.wav"></button>
+      <div>jarona orange 2</div>
+    </div>
+    <div class="sound-group" data-name="kris">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_kris.wav"></button>
+      <div>kris</div>
+    </div>
+    <div class="sound-group" data-name="last jarona">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_last_jarona.wav"></button>
+      <div>last jarona</div>
+    </div>
+    <div class="sound-group" data-name="leaf it to me">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_leaf_it_to_me.wav"></button>
+      <div>leaf it to me</div>
+    </div>
+    <div class="sound-group" data-name="lend me your power">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_lend_me_your_power.wav"></button>
+      <div>lend me your power</div>
+    </div>
+    <div class="sound-group" data-name="mini peppers">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_minipeppers.wav"></button>
+      <div>mini peppers</div>
+    </div>
+    <div class="sound-group" data-name="mostlys">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_mostlys.wav"></button>
+      <div>mostlys</div>
+    </div>
+    <div class="sound-group" data-name="my favorite two">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_my_favorite_two.wav"></button>
+      <div>my favorite two</div>
+    </div>
+    <div class="sound-group" data-name="my human">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_my_human.wav"></button>
+      <div>my human</div>
+    </div>
+    <div class="sound-group" data-name="my king">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_my_king.wav"></button>
+      <div>my king</div>
+    </div>
+    <div class="sound-group" data-name="mysterious wind">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_mysterious_wind.wav"></button>
+      <div>mysterious wind</div>
+    </div>
+    <div class="sound-group" data-name="no way it's your children">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_no_way_its_your_children.wav"></button>
+      <div>no way it's your children</div>
+    </div>
+    <div class="sound-group" data-name="no no no">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_nonono.wav"></button>
+      <div>no no no</div>
+    </div>
+    <div class="sound-group" data-name="omega flowery">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_omega_flowery.wav"></button>
+      <div>omega flowery</div>
+    </div>
+    <div class="sound-group" data-name="powering up">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_powering_up.wav"></button>
+      <div>powering up</div>
+    </div>
+    <div class="sound-group" data-name="prism blow">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_prism_blow.wav"></button>
+      <div>prism blow</div>
+    </div>
+    <div class="sound-group" data-name="san fran">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sanfran.wav"></button>
+      <div>san fran</div>
+    </div>
+    <div class="sound-group" data-name="say that again">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_say_that_again.wav"></button>
+      <div>say that again</div>
+    </div>
+    <div class="sound-group" data-name="smile again">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_smile_again.wav"></button>
+      <div>smile again</div>
+    </div>
+    <div class="sound-group" data-name="sorry about that guys">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorryaboutthatguys.wav"></button>
+      <div>sorry about that guys</div>
+    </div>
+    <div class="sound-group" data-name="sorry about that little guy">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorryaboutthatlittleguy.wav"></button>
+      <div>sorry about that little guy</div>
+    </div>
+    <div class="sound-group" data-name="sorry about the guy">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorryabouttheguy.wav"></button>
+      <div>sorry about the guy</div>
+    </div>
+    <div class="sound-group" data-name="sorry to keep a lady in waiting">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorrytokeepaladyinwaiting.wav"></button>
+      <div>sorry to keep a lady in waiting</div>
+    </div>
+    <div class="sound-group" data-name="sorry to keep you ladies">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorrytokeepyouladies.wav"></button>
+      <div>sorry to keep you ladies</div>
+    </div>
+    <div class="sound-group" data-name="sorry to keep you waiting 1">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorrytokeepyouwaiting1.wav"></button>
+      <div>sorry to keep you waiting 1</div>
+    </div>
+    <div class="sound-group" data-name="sorry to keep you waiting 2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_sorrytokeepyouwaiting2.wav"></button>
+      <div>sorry to keep you waiting 2</div>
+    </div>
+    <div class="sound-group" data-name="spiral dance">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_spiral_dance.wav"></button>
+      <div>spiral dance</div>
+    </div>
+    <div class="sound-group" data-name="stingus">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_stingus.wav"></button>
+      <div>stingus</div>
+    </div>
+    <div class="sound-group" data-name="suckle it up">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_suckle_it_up.wav"></button>
+      <div>suckle it up</div>
+    </div>
+    <div class="sound-group" data-name="susie">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_susie.wav"></button>
+      <div>susie</div>
+    </div>
+    <div class="sound-group" data-name="take that">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_take_that.wav"></button>
+      <div>take that</div>
+    </div>
+    <div class="sound-group" data-name="that's my dreams">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_thats_my_dreams.wav"></button>
+      <div>that's my dreams</div>
+    </div>
+    <div class="sound-group" data-name="that's great">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_thatsgreat.wav"></button>
+      <div>that's great</div>
+    </div>
+    <div class="sound-group" data-name="the boys">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_the_boys.wav"></button>
+      <div>the boys</div>
+    </div>
+    <div class="sound-group" data-name="the diner">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_the_diner.wav"></button>
+      <div>the diner</div>
+    </div>
+    <div class="sound-group" data-name="they're eating my flesh">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_theyre_eating_my_flesh.wav"></button>
+      <div>they're eating my flesh</div>
+    </div>
+    <div class="sound-group" data-name="this guy's your best friend">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_thisguysyourbestfriend.wav"></button>
+      <div>this guy's your best friend</div>
+    </div>
+    <div class="sound-group" data-name="try my flavor">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_try_my_flavor.wav"></button>
+      <div>try my flavor</div>
+    </div>
+    <div class="sound-group" data-name="voice noise 1">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voicenoise_1.wav"></button>
+      <div>voice noise 1</div>
+    </div>
+    <div class="sound-group" data-name="voice noise 2">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voicenoise_2.wav"></button>
+      <div>voice noise 2</div>
+    </div>
+    <div class="sound-group" data-name="voice noise 3">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voicenoise_3.wav"></button>
+      <div>voice noise 3</div>
+    </div>
+    <div class="sound-group" data-name="voice noise loop">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voicenoise_loop.wav"></button>
+      <div>voice noise loop</div>
+    </div>
+    <div class="sound-group" data-name="what a predictable creature">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_what_a_predictable_creature.wav"></button>
+      <div>what a predictable creature</div>
+    </div>
+    <div class="sound-group" data-name="with your powers combined">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_with_your_powers_combined.wav"></button>
+      <div>with your powers combined</div>
+    </div>
+    <div class="sound-group" data-name="wow">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_wow.wav"></button>
+      <div>wow</div>
+    </div>
+    <div class="sound-group" data-name="yes">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_yes.wav"></button>
+      <div>yes</div>
+    </div>
+    <div class="sound-group" data-name="your dad">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_your_dad.wav"></button>
+      <div>your dad</div>
+    </div>
+    <div class="sound-group" data-name="your dad's my best friend">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_yourdadsmybestfriend.wav"></button>
+      <div>your dad's my best friend</div>
+    </div>
+    <div class="sound-group" data-name="you're a hero">
+      <button class="playBtn" data-src="https://github.com/dein-onychus/Flowery/raw/main/snd_flowery_voiceclip_youre_a_hero.wav"></button>
+      <div>you're a hero</div>
+    </div>
+  </div>
+
+  <script>
+    let currentAudio = null;
+
+    function stopCurrentAudio() {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentAudio = null;
+      }
+    }
+
+    function playAudio(src) {
+      stopCurrentAudio();
+      const audio = new Audio(src);
+      audio.play();
+      currentAudio = audio;
+    }
+
+    document.querySelectorAll('.playBtn').forEach(button => {
+      button.addEventListener('click', () => {
+        playAudio(button.dataset.src);
+      });
+    });
+
+    document.getElementById('searchBar').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.sound-group').forEach(group => {
+        const name = group.dataset.name.toLowerCase();
+        group.style.display = name.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
